@@ -37,5 +37,8 @@ const styles = StyleSheet.create({
     listItemStyle: {
         marginVertical: 100,
         marginHorizontal: 50,
+        backgroundColor: "skyblue",
+        width: 120,
+        height: 120,
     },
 });
