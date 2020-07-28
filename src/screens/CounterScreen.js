@@ -1,10 +1,25 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 const CounterScreen = () => {
+
+    const [counter, setCounter] = useState(0);
+
     return (
         <View>
-            <Text style={styles.displayText}>Current Count</Text>
+            <Button
+                title="Increase"
+                onPress={() => {
+                    setCounter(prevCount => ( prevCount + 1));
+                }}
+            />
+            <Button
+                title="Decrease"
+                onPress={() => {
+                    setCounter(prevCount => ( prevCount - 1));
+                }}
+            />
+            <Text style={styles.displayText}>Current Count: {counter}</Text>
         </View>
     );
 };
