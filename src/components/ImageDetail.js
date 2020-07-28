@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#2196f3',
         elevation: 18,
+        overflow: 'hidden',
     },
     titleText: {
         fontSize: 18,
